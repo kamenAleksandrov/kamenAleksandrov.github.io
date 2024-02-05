@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico:wght@200;400;600&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+* {
+  box-sizing: border-box;
+}
+.cd__main {
+  background: pink !important;
+  font-family: "Pacifico", cursive !important;
+  min-height: 450px;
+}
+body {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  margin: 0;
+  min-height: 100vh;
+  color: #555555;
+  height: auto;
+}
+
+.heart {
+  position: fixed;
+  font-size: 1.5rem;
+  top: -1vh;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(0vh) translateX(-10vw);
+  }
+  to {
+    transform: translateY(105vh) translateX(10vw);
+  }
+}
+
+.crossed-out {
+  position: relative;
+}
+
+.crossed-out::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 30px; /* Adjust this value to move the line up or down */
+  height: 7px;
+  width: 100%;
+  background: currentColor;
+}
+
+#centered-gif {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw; /* Adjust this value to change the width of the image */
+  height: auto; /* This will keep the aspect ratio of the image */
+}
+
+#text {
+  position: absolute;
+  bottom: 25%;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+#buttons {
+  position: absolute;
+  margin-top: 20px;
+  bottom: 17%;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #ff7f7f;
+  color: white;
+  cursor: pointer;
+  height: 5vh;
+  width: auto;
+}
+
+button:hover {
+  background-color: #ff4f4f;
+}

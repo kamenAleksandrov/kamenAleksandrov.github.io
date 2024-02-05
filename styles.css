@@ -59,8 +59,15 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30vw; /* Adjust this value to change the width of the image */
+  width: 20vw; /* Adjust this value to change the width of the image */
   height: auto; /* This will keep the aspect ratio of the image */
+}
+
+@media (max-width: 1300px){
+  #centered-gif {
+    width: 80vw; /* Adjust this value to change the width of the image */
+    height: auto; /* This will keep the aspect ratio of the image */
+  }
 }
 
 #text {
